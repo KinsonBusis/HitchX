@@ -23,11 +23,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel2" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
+          <Component id="jPanel2" alignment="1" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -48,10 +44,10 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="614" max="-2" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="917" max="32767" attributes="0"/>
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="778" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="487" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -59,9 +55,9 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="235" max="32767" attributes="0"/>
+                  <EmptySpace pref="252" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -92,6 +88,10 @@
                                   <Component id="txtLogPassword" min="-2" pref="220" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace pref="72" max="32767" attributes="0"/>
                   </Group>
@@ -100,7 +100,9 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="txtLogUsername" min="-2" pref="38" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="txtLogPassword" min="-2" pref="36" max="-2" attributes="0"/>
@@ -171,6 +173,14 @@
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="txtLogPassword.addFocusListener(new java.awt.event.FocusAdapter() {&#xa;    @Override&#xa;    public void focusGained(java.awt.event.FocusEvent evt) {&#xa;        if (new String(txtLogPassword.getPassword()).equals(&quot;Password&quot;)) {&#xa;            txtLogPassword.setText(&quot;&quot;);&#xa;            txtLogPassword.setEchoChar(&apos;&#x2022;&apos;); // Show password bullets&#xa;            txtLogPassword.setForeground(new java.awt.Color(0, 0, 0)); // Black for user input&#xa;        }&#xa;    }&#xa;    &#xa;    @Override&#xa;    public void focusLost(java.awt.event.FocusEvent evt) {&#xa;        if (txtLogPassword.getPassword().length == 0) {&#xa;            txtLogPassword.setEchoChar((char) 0); // Make text visible again&#xa;            txtLogPassword.setText(&quot;Password&quot;);&#xa;            txtLogPassword.setForeground(new java.awt.Color(128, 128, 128));&#xa;        }&#xa;    }&#xa;});"/>
               </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="24" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Sign Up"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
